@@ -1,1 +1,1 @@
-created readme
+Start coding with C today
