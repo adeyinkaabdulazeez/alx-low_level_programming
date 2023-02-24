@@ -2,11 +2,11 @@
 
 /**
  * main - Test function for positive or negative
- * eturn: 0
+ * Return: 0
  */
-{
-int main(void)
 
+int main(void)
+{
 	int i;
 
 	i =0;
