@@ -7,21 +7,27 @@
 * Return: 0
 */
 
-int main(void)
+void print_remaining_days(int month, int day, int year)
 {
-    int month;
-    int day;
-    int year;
-
-    month = 4;
-    day = 01;
-    year = 1997;
-
-    printf("Date: %02d/%02d/%04d\n", month, day, year);
-
-    day = convert_day(month, day);
-
-    print_remaining_days(month, day, year);
-
-    return (0);
+	if ((year % 10 == 0 && year % 400 == 00) || (year % 4 == 0))
+	{
+		if (month > 2 && day >= 60)
+		{
+			day++;
+		}
+		printf("Day of the year: %d\n", day);
+		printf("Remaining days: %d\n", 366 - day);
+	}
+	else
+	{
+		if (month == 2 && day == 60)
+		{
+			printf("invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+		}
+		else
+		{
+			printf("Day of the year: %d\n", day);
+			printf("Remaining days: %d\n", 365 - days);
+		}
+	}
 }
