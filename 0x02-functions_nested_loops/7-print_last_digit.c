@@ -1,24 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_last_digit - prints the last digit of a number.
- * @n: The number to get the last digit of.
- *
- * Return: The value of the last digit.
+ * print_last_digit - prints the last digit of a number
+ * @n: the int to extract the last digit from
+ * Return: value of the last digit
  */
 int print_last_digit(int n)
 {
-	int last_digit;
+	int a;
 
 	if (n < 0)
-		n = -n;
+	n = -n;
 
-	last_digit = n % 10;
+	a = n % 10;
 
-	if (last_digit < 0)
-		last_digit = -last_digit;
+	if (a < 0)
+		a = -a;
 
-	putchar(last_digit + '0');
+	_putchar(a + '0');
 
-	return last_digit;
+	return (a);
 }
