@@ -1,2 +1,16 @@
-VimCrypt~03!w~Ý+†¯$-¾>¬S5"*&ÑÛ^+Å¼w¬»4]™ýyH¾™¹oK¨Ô"êþÙ
-¤ó4GŽÞ'–À†f/OÇrÅ¨žfˆCZ³Ól_Íé£}ð{jÕ&÷wãÅ|OB&#E‚‹‰5|ßrqO>H(o8/Ù$¬âñ£á¨³ñ@y<&~*­Ÿþ!½Uuÿ÷É§õ'‚Îð]{¶)BÞñôDIŽúTÈ–‘…99yà	ŠŠ@®Ý3N¹íÓcä‹¿êœÊÙ(1’hÚš9àÅfÈ‡þŸFz#°‚£Üïn1ùÓZå9Ó&Cü†È4O„*Ã•ëÒïØ
+#include "main.h"
+
+/**
+* _isalpha - checks if argument is alpha
+*
+* @c: input
+* Return: return 1 if c is alpha, return 0 otherwise
+*/
+
+int _isalpha(int c)
+{
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+		return (1);
+	else
+		return (0);
+}

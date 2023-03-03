@@ -1,2 +1,21 @@
-VimCrypt~03!ªìö:^áYî€{“«ú*ì?ŒĞú´iYBï°J+[eŞÓ†]ìTÙ/Ó¡Ëüd4Ş»µt7ËÁ›1ãı7İ"ÑŞSûœålÃ6úe¥^²¼›säwª].-L¸‘"¬n)kÜËh õÚ(2á‚^4„ÂN8e	ÂÏ‘§Sä~êŸĞçôšÖ:Ur©@Nîºyì“=sÏª
-ûqR6şëÀNM~ÉI@i‚¡q¤e·	3¼;‡tk(,şï­ãyw†·ÒàJˆôxµ5qŞX–'*Ì£^n¦şt½Y…è¾^Ÿ…t8à'Xgœ««¯j ßBXÏá"‡=™ ıÓ ß
+#include <stdio.h>
+
+/**
+  * main - Prints the numbers since 0 to 9
+  *
+  * Return: Always (Success)
+  */
+int main(void)
+{
+	char n;
+
+	for (n = '0'; n <= '9'; n++)
+	{
+		putchar(n);
+	}
+
+	putchar('\n');
+
+	return (0);
+}
+
